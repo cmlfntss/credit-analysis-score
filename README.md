@@ -1,4 +1,5 @@
 Projeto de Classificação de Score de Crédito
+
 📌 Sobre o projeto
 
 Durante o Bootcamp [RE]Start – Trilha de Analista de Dados, desenvolvi este projeto com o objetivo de realizar uma análise completa sobre classificação de score de crédito, passando por todas as etapas de um pipeline de dados: leitura, limpeza, exploração, visualização e geração de insights de negócio.
@@ -27,6 +28,7 @@ histórico de crédito;
 dívidas;
 consultas de crédito;
 score de crédito.
+
 ⚙️ Tecnologias utilizadas
 
 Durante o desenvolvimento utilizei:
@@ -38,6 +40,7 @@ Google Colab
 Power BI
 Git e GitHub
 🔄 Pipeline desenvolvido
+
 1️⃣ Leitura e exploração inicial
 
 Iniciei o projeto realizando a leitura do dataset e uma análise exploratória inicial para compreender:
@@ -46,6 +49,7 @@ estrutura dos dados;
 tipos das colunas;
 distribuição das variáveis;
 existência de valores ausentes e inconsistências.
+
 2️⃣ Limpeza e preparação dos dados
 
 Esta foi uma das etapas mais importantes do projeto.
@@ -59,6 +63,7 @@ tratamento de valores negativos e inconsistentes;
 padronização de variáveis financeiras;
 tratamento de outliers;
 criação da variável Credit_History_Age_Clean, utilizada para representar o histórico de crédito em anos.
+
 3️⃣ Análise Exploratória dos Dados (EDA)
 
 Após a preparação dos dados, investiguei a relação entre score de crédito e variáveis financeiras relevantes, buscando identificar padrões associados ao risco de crédito.
@@ -70,6 +75,7 @@ dívida média;
 histórico de crédito;
 número de empréstimos;
 distribuição dos scores de crédito.
+
 4️⃣ Desenvolvimento do Dashboard
 
 Para comunicar os resultados desenvolvi um dashboard interativo no Power BI contendo:
