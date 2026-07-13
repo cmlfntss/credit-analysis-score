@@ -1,141 +1,61 @@
-Projeto de Classificação de Score de Crédito
+## **Projeto de Classificação de Score de Crédito**
 
-📌 Sobre o projeto
-
-Durante o Bootcamp [RE]Start – Trilha de Analista de Dados, desenvolvi este projeto com o objetivo de realizar uma análise completa sobre classificação de score de crédito, passando por todas as etapas de um pipeline de dados: leitura, limpeza, exploração, visualização e geração de insights de negócio.
-
-Neste cenário, assumi o papel de analista de dados em uma fintech fictícia interessada em compreender melhor o perfil financeiro de seus clientes e identificar fatores associados ao risco de crédito.
-
-O objetivo principal foi responder perguntas importantes para o negócio, como:
-
+**Contexto**
+ 
+Este projeto foi desenvolvido durante o Bootcamp [RE]Start – Trilha de Analista de Dados com o objetivo de analisar e classificar scores de crédito. A proposta foi construir um pipeline completo de dados, da leitura à geração de insights, simulando o papel de um analista em uma fintech fictícia interessada em entender melhor o perfil financeiro de seus clientes e os fatores relacionados ao risco de crédito.
+As principais perguntas que guiaram a análise foram:
 Qual perfil apresenta maior risco de inadimplência?
-Quais fatores estão mais associados a clientes com score Poor?
+Quais fatores estão mais associados a clientes com pontuação ruim?
 Existe relação entre renda, dívida, histórico financeiro e score de crédito?
 Clientes com maior número de empréstimos apresentam maior risco?
-📂 Dataset
 
-Para este projeto utilizei o dataset Credit Score Classification, disponibilizado no Kaggle:
+**Conjunto de Dados**
 
+O dataset utilizado foi o Credit Score Classification, disponível no Kaggle:
 https://www.kaggle.com/datasets/parisrohan/credit-score-classification
+Ele contém informações financeiras e comportamentais dos clientes, incluindo renda anual e mensal, número de contas bancárias, número de cartões de crédito, quantidade de empréstimos, histórico de crédito, dívidas, consultas de crédito e pontuação de crédito.
 
-O conjunto de dados contém informações financeiras, cadastrais e comportamentais dos clientes, incluindo:
+**Tecnologias**
 
-renda anual e mensal;
-número de contas bancárias;
-número de cartões de crédito;
-quantidade de empréstimos;
-histórico de crédito;
-dívidas;
-consultas de crédito;
-score de crédito.
-
-⚙️ Tecnologias utilizadas
-
-Durante o desenvolvimento utilizei:
-
-Python
-Pandas
-NumPy
+Python (Pandas, NumPy)
 Google Colab
 Power BI
 Git e GitHub
-🔄 Pipeline desenvolvido
 
-1️⃣ Leitura e exploração inicial
+ **Pipeline**
+ 
+- Leitura e exploração inicial: análise da estrutura dos dados, tipos de colunas, distribuição das variáveis e identificação de valores ausentes.
+- Limpeza e preparação: tratamento de valores ausentes, correção de tipos, remoção de caracteres inválidos, padronização de variáveis financeiras, tratamento de outliers e criação da variável Credit_History_Age_Clean.
+- Análise exploratória: investigação da relação entre score e variáveis financeiras como renda mensal, dívida média, histórico de crédito e número de empréstimos.
+- Dashboard no Power BI: visualização interativa com métricas de clientes, classificação por risco, renda e dívida médias, distribuição de pontuação e comparativos por score.
 
-Iniciei o projeto realizando a leitura do dataset e uma análise exploratória inicial para compreender:
+**Insights**
 
-estrutura dos dados;
-tipos das colunas;
-distribuição das variáveis;
-existência de valores ausentes e inconsistências.
+Clientes classificados como Pobres possuem aproximadamente 2,6 vezes mais dívida média do que os classificados como Bom.
+Clientes Bom têm em média 8 anos a mais de histórico de crédito em relação aos Ruim.
+A renda média dos clientes Bom é cerca de 50% maior do que a dos Ruim.
+O número médio de empréstimos cresce conforme o score piora.
+O aumento da dívida acompanha diretamente a piora do score, reforçando a associação entre endividamento e risco.
+Mais da metade da carteira está na categoria Standard, o que abre espaço para estratégias de evolução para menor risco.
 
-2️⃣ Limpeza e preparação dos dados
+**Recomendações**
 
-Esta foi uma das etapas mais importantes do projeto.
+Adotar políticas de crédito mais conservadoras para clientes com alto nível de endividamento.
+Criar programas de educação financeira voltados para clientes classificados como Pobres.
+Incorporar histórico de crédito e quantidade de empréstimos como critérios relevantes na concessão.
+Desenvolver estratégias específicas para clientes Standard, evitando migração para categorias de maior risco.
 
-Durante a limpeza realizei:
+**Resultados**
 
-tratamento de valores ausentes;
-correção de tipos de dados;
-remoção e tratamento de caracteres inválidos (_);
-tratamento de valores negativos e inconsistentes;
-padronização de variáveis financeiras;
-tratamento de outliers;
-criação da variável Credit_History_Age_Clean, utilizada para representar o histórico de crédito em anos.
+O projeto resultou em um pipeline completo de análise de dados, incluindo leitura e preparação dos dados, análise exploratória, dashboard interativo e recomendações de negócio. Além do aprendizado técnico, foi uma oportunidade de praticar storytelling com dados e transformar informações em recomendações acionáveis.
 
-3️⃣ Análise Exploratória dos Dados (EDA)
+**Sobre mim**
 
-Após a preparação dos dados, investiguei a relação entre score de crédito e variáveis financeiras relevantes, buscando identificar padrões associados ao risco de crédito.
+Sou Camila de Jesus Fontes, profissional em transição para a área de dados. Atualmente atuo como Analista de Dados, aprofundando meus conhecimentos em Analytics, AWS e visualização de dados. Este projeto representa uma etapa importante na minha jornada de aprendizado e consolidação das habilidades adquiridas.
 
-As principais análises envolveram:
+**Arquivos**
 
-renda mensal;
-dívida média;
-histórico de crédito;
-número de empréstimos;
-distribuição dos scores de crédito.
-
-4️⃣ Desenvolvimento do Dashboard
-
-Para comunicar os resultados desenvolvi um dashboard interativo no Power BI contendo:
-
-total de clientes analisados;
-clientes classificados como alto risco;
-renda média mensal;
-dívida média;
-distribuição do score de crédito;
-renda média por score;
-dívida média por score;
-histórico médio de crédito por score;
-número médio de empréstimos por score;
-principais insights obtidos durante a análise.
-
-O dashboard final encontra-se abaixo:
-
-📈 Principais insights encontrados
-
-Durante a análise identifiquei alguns padrões importantes:
-
-Clientes classificados como Poor possuem aproximadamente 2,6 vezes mais dívida média do que clientes classificados como Good.
-Clientes classificados como Good possuem cerca de 8 anos adicionais de histórico de crédito em comparação aos clientes classificados como Poor.
-A renda média dos clientes Good é aproximadamente 50% maior do que a renda média dos clientes Poor.
-O número médio de empréstimos aumenta conforme o score piora.
-O aumento da dívida média acompanha diretamente a piora do score de crédito, indicando forte associação entre endividamento e risco.
-Embora clientes com melhor score apresentem maior renda média, a diferença observada na dívida é proporcionalmente maior, sugerindo que a gestão do endividamento pode ser mais relevante do que a renda isoladamente.
-Mais da metade da carteira encontra-se classificada como Standard, indicando potencial para estratégias de evolução desses clientes para categorias de menor risco.
-
-💡 Recomendações de negócio
-
-Com base nos resultados obtidos, eu sugeriria:
-
-desenvolver políticas de crédito mais conservadoras para clientes com elevado nível de endividamento;
-criar programas de educação financeira voltados para clientes classificados como Poor;
-incorporar histórico de crédito e quantidade de empréstimos como critérios relevantes na análise de concessão de crédito;
-desenvolver estratégias específicas para clientes classificados como Standard, reduzindo o risco de migração para categorias de maior risco.
-
-📊 Resultados
-
-Ao final do projeto consegui construir um pipeline completo de análise de dados, passando pelas etapas de:
-
-✅ Leitura dos dados
-✅ Limpeza e preparação
-✅ Análise exploratória
-✅ Desenvolvimento do dashboard
-✅ Geração de insights e recomendações de negócio
-
-Além do aprendizado técnico, este projeto me permitiu praticar storytelling com dados e transformar informações em recomendações acionáveis para o negócio.
-
-👩🏾‍💻 Sobre mim
-
-Sou uma profissional em transição e desenvolvimento na área de dados, atualmente atuando como Analista de Dados e aprofundando meus conhecimentos em Analytics, AWS e visualização de dados.
-
-Este projeto representa uma etapa importante da minha jornada de aprendizado e consolidação das habilidades desenvolvidas ao longo do bootcamp.
-
-📎 Arquivos do projeto
-Notebook com o pipeline completo de tratamento e análise dos dados;
-Dashboard desenvolvido em Power BI (.pbix);
-Dashboard exportado em PDF;
-Dataset tratado utilizado na análise.
-
-Desenvolvido por Camila de Jesus Fontes 🚀
+Notebook com o pipeline completo
+Dashboard em Power BI (.pbix)
+Dashboard exportado em PDF
+Dataset tratado utilizado na análise
